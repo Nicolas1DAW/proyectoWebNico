@@ -1,0 +1,44 @@
+ .encabezado{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+            "logo title title"
+            "menu  menu menu"
+    ;
+    width: 100%;
+    height: 25px;
+    align-items: center; 
+ }
+
+ .encabezado header{
+    border: 2px solid grey;
+    display: flex; /*alinea el logo y h2 horizontalmente */
+    align-items: center;
+ }
+
+ .encabezado header img{
+    width: 20px;
+    grid-area: logo ;
+    height: auto; /*hace la altura sea proporcional al ancho */
+    margin-right:25px ;
+ }
+
+ .encabezado header h2{
+    grid-area: title ; 
+    margin: 0;
+ }
+
+ .encabezado .menu{
+    grid-area: menu;
+    text-align: right;
+ }
+
+ .encabezado nav a{
+    padding: 5px;
+    margin-left: 15px;
+    text-decoration: none;
+    color: #333
+    
+ }
+
+ 
