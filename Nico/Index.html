@@ -1,56 +1,254 @@
-<HTml:5>
-   <head>
-        <meta charset="utf8"/>
-        <title>LOTR Sauron View</title>
-        <link rel="stylesheet" href="Estilos/styles.css">
-   </head>
-   <body>
-        <div class="encabezado">
-        <header>
-            <img src="x" alt="logo">
-            <h2>Sauron En Bruto</h2>
-          <div class="menu">
-            <nav>
-                <a href="Index.html">Inicio</a>
-                <a href="paginasHTML/sobreMi.html">Sobre Mí</a>
-                <a href="paginasHTML/blog.html">Mi Blog</a>
-                <a href="paginasHTML/formulario.html">Iníciate</a>
-            </nav>
-          </div>
-        </header>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="Estilos/styles.css">
+   <style>
+    body{
+      background-color: lightgray;
+    }
+      .encabezado {
+            background-image: url('Imagenes/paisajeFondoCabezera.jpg'); /* Reemplaza 'ruta/de/tu/imagen.jpg' con la ruta correcta de tu imagen */
+            background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+            background-position: center; /* Centra la imagen en el contenedor */
+            color: #fff; /* Color del texto en el encabezado (cambia según tu diseño) */
+            text-align: center; /* Alinea el texto al centro */
+            padding: 100px 0;
+            border-radius: 20px;
+
+            display: grid;
+            grid-template-rows: auto auto;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .encabezado .img {
+            margin: 5px auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .encabezado img {
+            width: 80px;
+            margin-right: 280px;
+            /*background-color: rgb(68, 7, 24);*/
+            border-radius: 80px;
+        }
+
+        .encabezado .img h1 {
+            text-align: center;
+            margin: 0 auto;
+            align-items: center;
+            display: flex;
+        }
+
+        .encabezado .menu {
+            margin: 0 auto;
+            /*border: solid 1px #A05000;*/
+            
+        }
+
+        
+        .encabezado .menu a {
+            padding: 5px;
+            margin-left: 15px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .encabezado .menu {
+            grid-area: menu;
+            text-align: right;
+        }
+
+        .encabezado .menu a {
+            padding: 5px;
+            margin-left: 15px;
+            text-decoration: none;
+        }
+        /* --------------------main-------------------- */
+  
+ body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.contenido-principal {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+
+}
+
+/* Presentacion basica */
+
+.contenido-presentacion-basica {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #663B2A;
+}
+
+.info-presentacion-basica {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.ImgBtn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 20px;
+}
+
+.info-presentacion-basica h2 {
+  
+  color: #fff;
+  text-align: left;
+}
+
+.info-presentacion-basica p {
+  
+  margin: 20px 0;
+  padding:20px;
+  color: #fff;
+  text-align: left;
+}
+
+
+.ImgBtn img {
+  border-radius: 50%;  
+  max-width: 100%;
+  height: 200px;  
+}
+
+.ImgBtn button {
+  padding: 20px;
+  background-color: #2980b9;
+  border-radius: 25px; 
+}
+
+.ImgBtn button a {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #3498db;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.ImgBtn button a:hover {
+
+  background-color: #2980b9;
+}
+
+/* Contenido Visual Pre-Blog */
+
+.contenido-visual-blog {
+  text-align: left;
+  background-color:#663B2A ;
+}
+
+.contenido-visual-blog h1 {
+  color: #333;
+  text-align: center;
+  margin-left:20px ;
+}
+
+.contenido-visual-blog section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.contenido-visual-blog article {
+  flex: 1;
+  padding: 10px;
+  margin: 0 10px;
+  background-color: #f2f2f2;
+}
+
+.contenido-visual-blog button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  background-color: #3498db;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.contenido-visual-blog button:hover {
+  background-color: #2980b9;
+}
+
+/* Pie */
+
+footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 200px; /* Ajusta el ancho según sea necesario */
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+} 
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado de la página -->
+    <header class="encabezado">
+        <div class="img">
+            <img src="Imagenes/logo-tierra-media.webp" alt="logo">
+            <h1>Sauron En Bruto</h1>
         </div>
+        <nav class="menu">
+            <a href="Index.html">Inicio</a>
+            <a href="paginasHTML/sobreMi.html">Sobre Mí</a>
+            <a href="paginasHTML/blog.html">Mi Blog</a>
+            <a href="paginasHTML/formulario.html">Iníciate</a>
+        </nav>
+    </header>
 
-        <main>
-            <div class="contenido-presentacion-basica">
-                <h2>Soy (nombre)</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum doloremque, sapiente distinctio nostrum adipisci voluptatem iusto illo, nam ducimus assumenda dignissimos. Sed sapiente, molestiae neque placeat eveniet quibusdam error expedita.</p>
-                <img src="x" alt="x">
-                <button>
-                    <a href="paginasHTML/formulario.html">Presentate</a>
-                </button>
-            </div>
-            <div class="contenido-visual-blog">
-                <h1>Te Presento mi blog</h1>
-                <section>
-                    <article class="artic-1">Articulo 1</article>
-                    <article class="artic-2">Articulo 2</article>
-                    <article class="artic-3">Articulo 3</article>
-                    <article class="artic-4">Articulo 4</article>
-                </section>
-                <button>
-                    <a href="paginasHTML/blog.html">Enterate de mis novedades en mi blog</a>
-                </button>
-            </div>
-        </main>
-        <aside>
-            <button class="subir-arriba">
-                <a href="Index.html">FlechaParaIrArriba</a>
+    <!-- Resto del contenido de la página -->
+    <main class="contenico-principal">
+        <div class="contenido-presentacion-basica">
+          <div class="info-presentacion-basica">
+            <h2>Soy (nombre)</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum doloremque, sapiente distinctio nostrum adipisci voluptatem iusto illo, nam ducimus assumenda dignissimos. Sed sapiente, molestiae neque placeat eveniet quibusdam error expedita.</p>
+          </div>
+          <div class="ImgBtn">
+            <img src="Imagenes/ImagenPresentacionSauron.gif" alt="x">
+            <button>
+                <a href="paginasHTML/formulario.html">Presentate</a>
             </button>
-        </aside>
-   </body>
-
-   <footer>
-        ©pie de pagina
-   </footer>
-
-</HTml:5>
+          </div>
+            
+        </div>
+        <div class="contenido-visual-blog">
+            <h2>Te Presento mi blog</h2>
+            <section>
+                <article class="artic-1">Articulo 1</article>
+                <article class="artic-2">Articulo 2</article>
+                <article class="artic-3">Articulo 3</article>
+                <article class="artic-4">Articulo 4</article>
+            </section>
+            <button>
+                <a href="paginasHTML/blog.html">Enterate de mis novedades en mi blog</a>
+            </button>
+        </div>
+    </main>
+<footer>
+    ©pie de pagina
+</footer>
+</body>
+</html>

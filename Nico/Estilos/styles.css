@@ -1,44 +1,29 @@
- .encabezado{
-    display: grid;
-    grid-template-rows: auto 1fr;
-    grid-template-areas: 
-            "logo title title"
-            "menu  menu menu"
-    ;
-    width: 100%;
-    height: 25px;
-    align-items: center; 
+.encabezado {
+   display: grid;
+   grid-template-rows: auto auto;
+   align-items: center;
+   gap: 10px;
+   padding: 10px;
  }
-
- .encabezado header{
-    border: 2px solid grey;
-    display: flex; /*alinea el logo y h2 horizontalmente */
-    align-items: center;
+ 
+ .encabezado .img {
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
  }
-
- .encabezado header img{
-    width: 20px;
-    grid-area: logo ;
-    height: auto; /*hace la altura sea proporcional al ancho */
-    margin-right:25px ;
+ 
+ .encabezado img {
+   width: 50px;
+   margin-right: 10px;
  }
-
- .encabezado header h2{
-    grid-area: title ; 
-    margin: 0;
+ 
+ .encabezado .menu {
+   margin: 0 auto;
  }
-
- .encabezado .menu{
-    grid-area: menu;
-    text-align: right;
+ .encabezado .menu a {
+   padding: 5px;
+   margin-left: 15px;
+   text-decoration: none;
+   color: #333;
  }
-
- .encabezado nav a{
-    padding: 5px;
-    margin-left: 15px;
-    text-decoration: none;
-    color: #333
-    
- }
-
  
